@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/custom-input/static/css/main.31d6cfe0.css",
+    "main.js": "/custom-input/static/js/main.07d3183d.js",
+    "index.html": "/custom-input/index.html",
+    "main.07d3183d.js.map": "/custom-input/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.07d3183d.js"
+  ]
+}

@@ -29,7 +29,8 @@ export const InputContainer = styled.div`
 export const InputArea = styled.input`
   display: flex;
   width: 323px;
-  padding: var(--spacing-md, 8px) var(--spacing-lg, 12px) 8px 36px;
+  height: 36px;
+  padding: var(--spacing-md, 8px) var(--spacing-lg, 68px) 8px 36px;
   gap: var(--spacing-md, 8px);
 
   border-radius: var(--radius-xs, 4px);
@@ -48,11 +49,6 @@ export const InputArea = styled.input`
 
   & ::placeholder {
     color: #1a1a1e;
-
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px; /* 166.667% */
   }
 
   &::-webkit-input-placeholder {
@@ -74,26 +70,33 @@ export const InputArea = styled.input`
 
 export const SearchIcon = styled.svg`
   position: absolute;
-  top: 12px;
-  left: 16px;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
 
   width: 16px;
   height: 16px;
+
+  pointer-events: none;
 `;
 
 export const HelpIcon = styled.svg`
   position: absolute;
-  top: 12px;
+  top: 50%;
   right: 52px;
+  transform: translateY(-50%);
 
   width: 16px;
   height: 16px;
+
+  pointer-events: none;
 `;
 
 export const Badge = styled.span`
   position: absolute;
-  top: 8px;
+  top: 50%;
   right: 12px;
+  transform: translateY(-50%); /* Центрування по вертикалі */
 
   padding: var(--spacing-none, 2px) var(--spacing-sm, 6px);
 
@@ -101,4 +104,12 @@ export const Badge = styled.span`
   border: 1px solid
     var(--Component-colors-Utility-Gray-utility-gray-200, #e4e4e7);
   background: var(--Component-colors-Utility-Gray-utility-gray-50, #fafafa);
+
+  color: var(--Component-colors-Utility-Gray-utility-gray-700, #3f3f46);
+  text-align: center;
+
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px; /* 166.667% */
 `;

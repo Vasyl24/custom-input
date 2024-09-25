@@ -47,6 +47,8 @@ export const InputArea = styled.input`
 
   margin-bottom: 8px;
 
+  outline: none;
+
   & ::placeholder {
     color: #1a1a1e;
   }
